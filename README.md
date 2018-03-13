@@ -2,7 +2,7 @@
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-haskell-cpp
+https://app.vagrantup.com/mcandre/boxes/vagrant-debian-haskell
 
 # EXAMPLE
 
