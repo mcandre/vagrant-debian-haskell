@@ -2,12 +2,13 @@
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-debian-haskell
+* https://app.vagrantup.com/mcandre/boxes/vagrant-debian-haskell-amd64
+* https://app.vagrantup.com/mcandre/boxes/vagrant-debian-haskell-i386
 
 # EXAMPLE
 
 ```console
-$ cd test
+$ cd amd64/test
 $ vagrant up
 $ vagrant ssh -c "cd /vagrant && ghc -o hello Hello.hs && ./hello"
 Hello World!
@@ -31,5 +32,6 @@ Hello World!
 # EXPORT
 
 ```console
-$ make vagrant-debian-haskell.box
+$ sh -c "cd amd64 && make vagrant-debian-haskell-amd64.box"
+$ sh -c "cd i386 && make vagrant-debian-haskell-i386.box"
 ```
